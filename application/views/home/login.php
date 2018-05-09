@@ -18,7 +18,15 @@
 				</div>
 				<div class="row p-t-10">
 					<div class="pull-right">
+						<i>Lupa password? Klik <a href="" onclick="message()">disini</a></i>
+					</div>
+					<div class="pull-right">
 						<i>Belum memiliki akun? Silahkan daftar <a href="<?php echo base_url ('home/registrasi'); ?>">disini</a></i>
+						<script>
+							function message(){
+							alert("Password telah kami kirim ke email anda. Silakan buka email anda!");
+						}
+						</script>
 					</div>
 				</div>
 			</form>
