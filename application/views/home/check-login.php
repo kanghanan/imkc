@@ -7,7 +7,7 @@ if(isset($_POST["username"]) && isset($_POST["password"])){
 		header("location: ../user");
 	}
 	 else {
-        header('location: login.php?error='.base64_encode('Username dan Password Invalid!!!'));
+        header('location: ../home/login?err=1');
         exit();
     }
 }

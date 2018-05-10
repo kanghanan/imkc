@@ -1,7 +1,7 @@
 <div class="navbar-default sidebar" role="navigation">
     <div class="sidebar-nav slimscrollsidebar">
         <div class="sidebar-head">
-            <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu">JODOH.in</span></h3>
+            <h3><span class="fa-fw open-close"><i class="ti-close ti-menu"></i></span> <span class="hide-menu open-close"><img src="<?php echo base_url ('assets/logo/jodohin-blk.png'); ?>" alt="img" style="width:100px;"></span></h3>
         </div>
         <ul class="nav" id="side-menu">
             <li style="padding: 70px 0 0;">

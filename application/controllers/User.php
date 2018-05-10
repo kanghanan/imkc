@@ -10,7 +10,8 @@ class User extends CI_Controller {
 
 	function checklogin()
 	{
-		$this->load->view('home/')
+		$this->load->view('home/check-login');
+
 	}
 	function index()
 	{

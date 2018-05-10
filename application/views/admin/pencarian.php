@@ -11,6 +11,7 @@
                     <button type="button">Cari</button>
                 </ol>
             </div>
+             <!-- Trigger/Open The Modal -->
             <!-- /.col-lg-12 -->
         </div>
         <!-- /.row -->

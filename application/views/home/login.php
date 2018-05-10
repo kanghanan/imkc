@@ -2,7 +2,26 @@
 	<div class="row">
 		<div style="width: 300px; margin-right: 5%" class="pull-right">
 			<h2>Login</h2>
-			<form class="form" method="POST" action="check-login.php">
+			<?php
+				if(isset($_POST["username"]) && isset($_POST["password"])){
+	$username = $_POST["username"];
+	$password = $_POST["password"];
+	if($username == 'user' && $password == '123'){
+		header("location: ../user");
+	}
+	 else {
+        $err=1;
+    }
+}
+				if(isset($err)){
+			?>
+					<script>
+					alert("Username atau Password Salah!");
+					</script>
+			<?php
+				}
+			?>
+			<form class="form" method="POST">
 				<div class="form-group">
 					<label>Username </label><label id="euser"></label>
 					<input type="text" id="username" name="username" class="form-control" required>
@@ -13,7 +32,7 @@
 				</div>
 				<div class="row">
 					<div class="pull-right">
-						<input type="submit" value="Masuk" onclick="login()" class="btn btn-info">
+						<input type="submit" value="Masuk" class="btn btn-info">
 					</div>
 				</div>
 				<div class="row p-t-10">
@@ -21,7 +40,7 @@
 						<i>Lupa password? Klik <a href="" onclick="message()">disini</a></i>
 					</div>
 					<div class="pull-right">
-						<i>Belum memiliki akun? Silahkan daftar <a href="<?php echo base_url ('home/registrasi'); ?>">disini</a></i>
+						<i>Atau belum memiliki akun? Silahkan daftar <a href="<?php echo base_url ('home/registrasi'); ?>">disini</a></i>
 						<script>
 							function message(){
 							alert("Password telah kami kirim ke email anda. Silakan buka email anda!");
